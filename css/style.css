@@ -14,8 +14,13 @@
 }
 sup{
   color: #87ADF5;
-  font-size: 10px;
+  font-size: 8px;
 }
+
+.active{
+  display: block;
+}
+
 /* Header */
 header{
   display: flex;
@@ -73,7 +78,7 @@ header .nav-centrale ul li{
   cursor: pointer;
 }
 #accedi:hover{
-  background-color: rgba(235, 235, 235, 0.5);
+  background-color: rgba(235, 235, 235, 0.8);
 }
 #scarica{
   color: white;
@@ -85,17 +90,28 @@ header .nav-centrale ul li{
   cursor: pointer;
 }
 #scarica:hover{
-  background-color: rgba(25, 29, 32, 0.5);
+  background-color: rgba(25, 29, 32, 0.8);
 }
 
 
 /* CONTENUTO NASCOSTO */
-.flex{
-  display: flex;
-}
 .funzionalita{
-  width: 70%;
+  width: 80%;
 }
+
+.funzionalita::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.funzionalita-conto-nascosto,
+.funzionalita-investimenti-nascosto,
+.funzionalita-pagamenti-nascosto,
+.funzionalita-extra-nascosto{
+  float: left;
+}
+
 .abbonamenti,
 .chi-siamo,
 .aiuto{
@@ -112,7 +128,6 @@ header .nav-centrale ul li{
 .chi-siamo > div,
 .aiuto > div{
   width: 25%;
-  border: 1px solid black;
 }
 .funzionalita ul li,
 .abbonamenti ul li,
