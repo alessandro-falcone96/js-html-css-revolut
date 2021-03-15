@@ -10,7 +10,7 @@
 .nav-laterale-sinistra,
 .nav-laterale-destra,
 .nav-centrale{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 sup{
   color: #87ADF5;
@@ -26,7 +26,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid lightgreen;
+  /* border: 1px solid lightgreen; */
   height: 100px;
 }
 header img{
@@ -56,7 +56,7 @@ header .nav-laterale-sinistra{
   margin-left: 20px;
 }
 header .container-destra{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   margin-right: 20px;
