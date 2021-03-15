@@ -12,6 +12,10 @@
 .nav-centrale{
   border: 1px solid blue;
 }
+sup{
+  color: #87ADF5;
+  font-size: 10px;
+}
 /* Header */
 header{
   display: flex;
@@ -20,40 +24,40 @@ header{
   border: 1px solid lightgreen;
   height: 100px;
 }
-img{
+header img{
   height: 50px;
   width: 50px;
 }
-ul li{
+header ul li{
   display: inline-block;
   list-style:none;
   padding: 10px 20px;
 }
-ul li a{
+header ul li a{
   color: grey;
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
 }
-ul li a:hover{
+header ul li a:hover{
   color: black;
 }
-.nav-laterale-sinistra ul{
+header .nav-laterale-sinistra ul{
   display: flex;
   align-items: center;
 }
 
-.nav-laterale-sinistra{
+header .nav-laterale-sinistra{
   margin-left: 20px;
 }
-.container-destra{
+header .container-destra{
   border: 1px solid red;
   display: flex;
   justify-content: space-between;
   margin-right: 20px;
 }
-.nav-laterale-destra ul li,
-.nav-centrale ul li{
+header .nav-laterale-destra ul li,
+header .nav-centrale ul li{
   line-height: 45px;
 }
 
@@ -82,4 +86,94 @@ ul li a:hover{
 }
 #scarica:hover{
   background-color: rgba(25, 29, 32, 0.5);
+}
+
+
+/* CONTENUTO NASCOSTO */
+.flex{
+  display: flex;
+}
+.funzionalita{
+  width: 70%;
+}
+.abbonamenti,
+.chi-siamo,
+.aiuto{
+  width: 15%;
+}
+.funzionalita,
+.abbonamenti,
+.chi-siamo,
+.aiuto{
+  box-shadow: 1px 1px 8px #888888;
+}
+.funzionalita > div,
+.abbonamenti > div,
+.chi-siamo > div,
+.aiuto > div{
+  width: 25%;
+  border: 1px solid black;
+}
+.funzionalita ul li,
+.abbonamenti ul li,
+.chi-siamo ul li,
+.aiuto ul li{
+  list-style: none;
+  padding: 15px 15px;
+}
+.funzionalita ul li a,
+.abbonamenti ul li a,
+.chi-siamo ul li a,
+.aiuto ul li a{
+  text-decoration: none;
+  color: grey;
+}
+
+.funzionalita ul li a i,
+.abbonamenti ul li a i,
+.chi-siamo ul li a i,
+.aiuto ul li a i{
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+  background-color: #e3e7ea;
+  margin-right: 5px;
+}
+
+.funzionalita ul li a:hover,
+.abbonamenti ul li a:hover,
+.chi-siamo ul li a:hover,
+.aiuto ul li a:hover{
+  color: black;
+}
+
+body{
+  position: relative;
+}
+.funzionalita{
+  position: absolute;
+  top: 100px;
+  right: 25px;
+  display: none;
+}
+
+.abbonamenti{
+  position: absolute;
+  top: 100px;
+  right: 475px;
+  display: none;
+}
+
+.chi-siamo{
+  position: absolute;
+  top: 100px;
+  right: 300px;
+  display: none;
+}
+
+.aiuto{
+  position: absolute;
+  top: 100px;
+  right: 175px;
+  display: none;
 }
