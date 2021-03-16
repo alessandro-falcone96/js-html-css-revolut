@@ -1,30 +1,30 @@
 
 $('#link-funzionalita').mouseenter(function() {
-  $('.funzionalita').toggle();
+  $('.funzionalita').show();
 });
 $('#link-funzionalita').mouseleave(function() {
-  $('.funzionalita').toggle();
+  $('.funzionalita').hide();
 });
 
 $('#link-abbonamenti').mouseenter(function() {
-  $('.abbonamenti').toggle();
+  $('.abbonamenti').show();
 });
 $('#link-abbonamenti').mouseleave(function() {
-  $('.abbonamenti').toggle();
+  $('.abbonamenti').hide();
 });
 
 $('#link-chi-siamo').mouseenter(function() {
-  $('.chi-siamo').toggle();
+  $('.chi-siamo').show();
 });
 $('#link-chi-siamo').mouseleave(function() {
-  $('.chi-siamo').toggle();
+  $('.chi-siamo').hide();
 });
 
 $('#link-aiuto').mouseenter(function() {
-  $('.aiuto').toggle();
+  $('.aiuto').show();
 });
 $('#link-aiuto').mouseleave(function() {
-  $('.aiuto').toggle();
+  $('.aiuto').hide();
 });
 
 
