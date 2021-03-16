@@ -26,3 +26,24 @@ $('#link-aiuto').mouseenter(function() {
 $('#link-aiuto').mouseleave(function() {
   $('.aiuto').toggle();
 });
+
+
+$("#link-funzionalita").click(function() {
+  $(".funzionalita").siblings().hide();
+  $(".funzionalita").toggle();
+});
+
+$("#link-abbonamenti").click(function() {
+  $(".abbonamenti").siblings().hide();
+  $(".abbonamenti").toggle();
+});
+
+$("#link-chi-siamo").click(function() {
+  $(".chi-siamo").siblings().hide();
+  $(".chi-siamo").toggle();
+});
+
+$("#link-aiuto").click(function() {
+  $(".aiuto").siblings().hide();
+  $(".aiuto").toggle();
+});
